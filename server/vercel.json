@@ -4,8 +4,8 @@
     "env": {
         "DATABASE_URI": "mongodb+srv://admin:abc201199@cluster0.3crqh.mongodb.net/testnest?retryWrites=true&w=majority",
         "JWT_ACCESS_TOKEN_SECRET": "nest-base-server",
-        "JWT_ACCESS_TOKEN_EXPIRATION_TIME": 86400,
-        "SALT_ROUND": 10
+        "JWT_ACCESS_TOKEN_EXPIRATION_TIME": "86400",
+        "SALT_ROUND": "10"
     },
     "builds": [
         {
