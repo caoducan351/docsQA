@@ -1,16 +1,22 @@
 {
     "version": 2,
     "name": "api-nestjs-base",
+    "env": {
+        "DATABASE_URI": "mongodb+srv://admin:abc201199@cluster0.3crqh.mongodb.net/testnest?retryWrites=true&w=majority",
+        "JWT_ACCESS_TOKEN_SECRET": "nest-base-server",
+        "JWT_ACCESS_TOKEN_EXPIRATION_TIME": 86400,
+        "SALT_ROUND": 10
+    },
     "builds": [
         {
-            "src": "main.ts",
+            "src": "src/main.ts",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "main.ts",
+            "dest": "src/main.ts",
             "methods": [
                 "GET",
                 "POST",
