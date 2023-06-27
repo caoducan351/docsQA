@@ -14,5 +14,5 @@ export const enableMyMorgan = (
   app: INestApplication,
   option = MORGAN_MODE.DEV,
 ) => {
-  app.use(morgan(option));
+  // app.use(morgan(option));
 };
