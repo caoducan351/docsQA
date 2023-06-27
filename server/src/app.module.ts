@@ -8,7 +8,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { HttpExceptionFilter } from './shared/services/http-exception-filter';
 import { DatabaseModule } from './modules/database/database.module';
-import APP_MODULES from 'src/modules';
+import APP_MODULES from "./modules";
 
 @Module({
   imports: [
