@@ -9,8 +9,6 @@ import { AppService } from './app.service';
 import { HttpExceptionFilter } from './shared/services/http-exception-filter';
 import { DatabaseModule } from './modules/database/database.module';
 import APP_MODULES from 'src/modules';
-import { diskStorage } from 'multer';
-import { MulterModule } from '@nestjs/platform-express';
 
 @Module({
   imports: [
